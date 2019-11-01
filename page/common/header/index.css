@@ -1,4 +1,15 @@
-
+/*
+* @Author: weiqiang
+* @Date: 2019/11/1 11:24
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f6f6f6;
+    font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+}
 .header .logo{
     position: absolute;
     left: 60px;

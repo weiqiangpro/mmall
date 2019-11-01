@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: weiqiang
+  @Date: 2019/11/1 11:24
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>=MMal</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <link rel="stylesheet" href="../page/detail/index.css">
+    <script src="../page/detail/index.js"></script>
+
+</head>
+<body>
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user-center.html">我的MMall</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于MMall</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="w">
+        <a class="logo" href="./index1.html">MMall</a>
+        <div class="search-con">
+            <input class="search-input" id="search-input" placeholder="请输入商品名称"/>
+            <button class="btn search-btn" id="search-btn">搜索</button>
+        </div>
+    </div>
+</div>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a class="link" href="./index.html">MMall</a>
+            <span>></span>
+            <span class="link-text">商品详情</span>
+        </div>
+    </div>
+</div>
+<div class="page-container w">
+    <div class="intro-wrap clear">
+        <div class="p-img-wrap">
+            <div class="main-img-con">
+                <img class="main-img" src="http://img.happymmall.com/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg">
+            </div>
+            <ul class="p-img-list">
+                <li class="p-img-item">
+                    <img class="p-img" src="http://img.happymmall.com/ac3e571d-13ce-4fad-89e8-c92c2eccf536.jpeg">
+                </li>
+                <li class="p-img-item">
+                    <img class="p-img" src="http://img.happymmall.com/4bb02f1c-62d5-48cc-b358-97b05af5740d.jpeg">
+                </li>
+                <li class="p-img-item">
+                    <img class="p-img" src="http://img.happymmall.com/36bdb49c-72ae-4185-9297-78829b54b566.jpeg">
+                </li>
+            </ul>
+        </div>
+        <div class="p-info-wrap"><p class="p-name">Midea/美的 BCD-535WKZM(E)冰箱双开门无霜智能家用厨卫家电</p>
+            <p class="p-subtitle">送品牌烤箱，五一大促</p>
+            <div class="info-item p-price-con">
+                <span class="label">价格:</span>
+                <span class="p-price">￥3299</span>
+            </div>
+            <div class="info-item p-quantity-con">
+                <span class="label">库存:</span>
+                <span  id="p-nums">0</span>
+            </div>
+            <div class="info-item">
+                <span class="label">数量:</span>
+                <input id="count" class="p-count" value="1" readonly="readonly">
+                <span class="p-count-btn plus" id="plus">+</span>
+                <span class="p-count-btn minus" id="minus">-</span>
+            </div>
+            <div class="info-item"><a class="btn cart-add">加入购物车</a></div>
+        </div>
+    </div>
+    <div class="detail-wrap">
+        <div class="detail-tab-con">
+            <ul class="tab-list">
+                <li class="tab-item active">商品详情</li>
+            </ul>
+        </div>
+        <div class="detail-con">
+            <p>
+                <img alt="miaoshu.jpg" src="http://img.happymmall.com/9c5c74e6-6615-4aa0-b1fc-c17a1eff6027.jpg"
+                     width="790" height="444"><br>
+            </p>
+            <p><img alt="miaoshu2.jpg" src="http://img.happymmall.com/31dc1a94-f354-48b8-a170-1a1a6de8751b.jpg"
+                    width="790" height="1441">
+                <img alt="miaoshu3.jpg" src="http://img.happymmall.com/7862594b-3063-4b52-b7d4-cea980c604e0.jpg"
+                     width="790" height="1442">
+                <img alt="miaoshu4.jpg" src="http://img.happymmall.com/9a650563-dc85-44d6-b174-d6960cfb1d6a.jpg"
+                     width="790" height="1441"><br>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="w">
+        <!--        <div class="links">-->
+        <!--            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |-->
+        <!--            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |-->
+        <!--            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |-->
+        <!--            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>-->
+        <!--        </div>-->
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+</body>
+</html>
