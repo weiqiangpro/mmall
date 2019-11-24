@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: 芦传慧
+  @Date: 2019/11/13 20:33
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>MMal</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../page/order/index.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <link rel="stylesheet" href="../page/order/index.css">
+    <link rel="stylesheet" href="../page/order/iconfont.css">
+</head>
+<body>
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user_center.html">用户中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="w" style="height: 120px;padding-top: 10px;background-color: #e2231a;height: 90px;">
+        <div style="width: 60%;position: absolute;left: 0;">
+            <a class="logo_cart" style="text-decoration: none" href="./index.html">西农微超市</a>&nbsp;&nbsp;
+            <a href=""
+               style="font-weight: normal;font-size: 19px;color: white;position: relative;top: -13px;left: 10px;">我的购物车</a>
+            <a href=""
+               style="color: #cbcbcb;border: 1px solid white;padding: 5px 10px;border-radius: 15px;position: relative;top: 20px;left: -90px;">返回超市首页</a>
+            <a href=""
+               style="font-weight: normal;font-size: 16px;color: white;position: relative;left: -10px;top: 5px;">首页</a>
+            <a href="" style="font-weight: normal;font-size: 16px;color: white;position: relative;left: 20px;top: 5px;">个人中心</a>
+        </div>
+        <div style="width: 40%;display: flex;flex-direction: row;margin-top: 30px;position: absolute;right: 0;">
+            <input class="search-input_cart" id="search-input" placeholder="请输入商品名称"/>
+            <div class="search-btn" id="search-btn">搜索</div>
+        </div>
+    </div>
+</div>
+
+<div class="crumb_cart" style="border-top: none;">
+    <div class="w">
+        <div class="dingdan">我的订单</div>
+        <div style="padding-bottom: 80px;margin-top: 20px;background-color:white;">
+            <ul class="dd_">
+                <li class="_select">全部订单</li>
+                <li>代付款</li>
+                <li>待收货</li>
+                <li>已完成</li>
+            </ul>
+
+            <div style="display: flex;flex-direction: row;background: #eee;text-align: center;margin-top: -10px;height: 40px;line-height: 40px">
+                <div class="column t-goods" style="width: 51%;padding-left: 30px;text-align: left">订单详情</div>
+                <div class="column t-user" style="width: 13%;padding-top: 0;">收货人</div>
+                <div class="column t-price" style="width: 13%;padding-top: 0;">金额</div>
+                <div class="column t-status" style="width: 13%;padding-top: 0;">状态</div>
+                <div class="column t-action" style="width: 13%;padding-top: 0;">操作</div>
+            </div>
+            <div class="order_detil">
+                <div style="display: flex;flex-direction: row;background: #eee;text-align: center;margin-top:20px;height: 30px;line-height: 30px;padding-left: 20px;">
+                    <span class="date"> 2019-11-18 20:03:29</span>
+                    <span style="position: relative;left: 35px;">订单号:&nbsp;&nbsp;<span
+                            style="color: black">106404611937</span></span>
+                </div>
+                <div class="crumb-con">
+                    <div class="column t-goods">
+                        <img src="../image/goods/detail11.jpg" alt="">
+                        <a href="">【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</a>
+                    </div>
+                    <div class="column t-user">
+                        <span data-toggle="tooltip" data-placement="bottom" title="家庭地址。。。。。。。。。。。">
+                            <span class="icon iconfont"></span>魏强
+                        </span>
+                    </div>
+                    <div class="column t-price">
+                        ￥3000.00
+                    </div>
+                    <div class="column t-status">未发货</div>
+                    <div class="column t-action">
+                        <div>立即删除</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order_detil">
+                <div style="display: flex;flex-direction: row;background: #eee;text-align: center;margin-top:20px;height: 30px;line-height: 30px;padding-left: 20px;">
+                    <span class="date"> 2019-11-18 20:03:29</span>
+                    <span style="position: relative;left: 35px;">订单号:&nbsp;&nbsp;<span
+                            style="color: black">106404611937</span></span>
+                </div>
+                <div class="crumb-con">
+                    <div class="column t-goods">
+                        <img src="../image/goods/detail11.jpg" alt="">
+                        <a href="">【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</a>
+                    </div>
+                    <div class="column t-user">
+                         <span data-toggle="tooltip" data-placement="bottom" title="家庭地址。。。。。。。。。。。">
+                            <span class="icon iconfont"></span>魏强
+                        </span>
+                    </div>
+                    <div class="column t-price">
+                        ￥3000.00
+                    </div>
+                    <div class="column t-status">未发货</div>
+                    <div class="column t-action">
+                        <div>立即删除</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class=" btnn btn-primary" style="float: right;margin-left: 20px;margin-top: 20px;">下一页</button>
+
+            <button class=" btnn btn-primary" style="float: right;margin-top: 20px;">上一页</button>
+        </div>
+
+    </div>
+</div>
+
+
+<!--精品推荐-->
+<div class="w" style="margin-top: 70px;">
+
+</div>
+
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/**
+* @Author: 芦传慧
+* @Date: 2019/11/23 19:15
+*/
+
+.show_us{
+    width: 1100px;
+    display: flex;
+    margin: 50px auto;
+
+}
+.our_directory{
+    padding-top: 20px;
+    display: block;
+    background: white;
+    float: left;
+    height: 1500px;
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.our_information{
+    display: block;
+    background: white;
+    margin-left: 10px;
+    padding: 20px 20px 20px 20px;
+    height: 1500px;
+    width: 1000px;
+
+}
+
+li{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    color: #9d9d9d;
+}
+#our_news{
+    font-size: 20px;
+    height: 50px;
+    color: black;
+}
+
+.split{
+    background: #c60023;
+    height: 3px;
+}
+.information_title{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #c60023;
+}
+.information_explain{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.p_split{
+    height: 1px;
+    background-color: #bfbfbf;
+}
+
+.p_content{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.employee1,.employee2, .employee3, .employee4, .employee5, .employee6, .employee7{
+    margin-top: 20px;
+    border: 2px black solid;
+    width: 100px;
+    height: 280px;
+    margin-left: 8px;
+    float: left;
+}
+.employee_image{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80px;
+    height: 80px;
+}
+.employee_name{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#register{
+    color: #c60023;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 15px;
+}

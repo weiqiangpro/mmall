@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: 芦传慧
+  @Date: 2019/11/23 17:25
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>MMal</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../page/user_center/index.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <link rel="stylesheet" href="../page/user_center/index.css">
+    <link rel="stylesheet" href="../page/about/index.css">
+
+</head>
+<body>
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user_center.html">用户中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="header" >
+    <div class="w" style="height: 120px;padding-top: 20px;">
+        <div style="width: 60%;position: absolute;left: 0;">
+            <span style="color: white; font-size: 18px; font-weight: bold;">欢迎来到，</span>
+            <span style="color: white; font-size: 36px; font-weight: bold;">校园微超市</span>
+        </div>
+    </div>
+</div>
+<div class="show_us">
+    <div class="our_directory">
+        <ul>
+            <li class="select" id="our_news">关于我们</li>
+            <li class="select" id="simple_instruction">平台简介</li>
+            <li class="select" id="create_idea">创作来源</li>
+            <li class="select" id ="trade_rule">经营理念</li>
+            <li class="select" id="our_employee">团队成员</li>
+        </ul>
+    </div>
+
+    <div class="our_information">
+        <div class="information1">
+            <div class="information_title">
+                <p>平台简介</p>
+            </div>
+            <div class="information_explain">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校园微超市，是一个面向校园的微型网上购物平台，消费群体主要是学生。<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;它不同于实体的超市，购买商品不够方便和快捷，只要你有一个能上网的手机或者一台可以连网的电脑，不论你在校园的哪个地方，只需要动一动手指，你需要的东西就会来到你的身边；
+                    它不同于普通的购物平台，商品鱼龙混杂、商家唯利是图，买的不放心、用的不安心。
+                    这是一个良心的学生购物平台，提供最好的服务，赚取最少的利润，销售最优的产品。<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里的经营者是和你一样的学，在这里，你不仅可以做顾客，你也可以做工作人员，这个平台给你提供兼职的机会，我们长期招聘配送人员。我们不仅让你少花钱，还要让你多赚钱。<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校园微超市，是学生的平台，更是良心的平台。<br/>
+                </p>
+            </div>
+        </div>
+        <div class="split"></div>
+        <div class="information2">
+            <div class="information_title">
+                <p>创作来源</p>
+            </div>
+            <div class="information_explain">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为什么会想到创建这个平台呢？第一个字：懒，第二个字：急。随着网络和科技大发展，网上购物已经蔚然成风，吃、穿、玩、用都是可以在网上解决，我们足不出户就可以买到想要的东西。但是对于学生来说，好像不是很满足。<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一、在学校买东西不论怎么的，你都得去取快递，“懒癌患者”可能不想走出宿舍去取；<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二，如果有的东西不能远距离运输，例如水果，网上购买的弊端就出来了，因此现在有很多校园网上水果商城。
+                    既然可以有水果商城，为何不能有“校园淘宝”、“校园京东”等；<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三，买了东西，需要等待三五天的快递运输，是不是很煎熬呢，如果校园内有网上平台，就可以当天送达，岂不更好？<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于以上考虑，建立各个学校的“校园微超市”是很必要的。
+                </p>
+            </div>
+        </div>
+        <div class="split"></div>
+        <div class="information3">
+            <div class="information_title">
+                <p>经营理念</p>
+            </div>
+            <div class="information_explain">
+                <p class="p_content">对用户</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户是上帝，也是我们的衣食父母，坚持用户利益至上，不断倾听和深刻理解用户需求，不断给用户惊喜，不断提供超预期的体验和服务，不断创造新的用户价值；</p>
+                <div class="p_split"></div>
+                <p class="p_content">对合作伙伴</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊重和善待合作伙伴，真诚合作，一起共建共生共赢的生态环境；</p>
+                <div class="p_split"></div>
+                <p class="p_content">对工作人员</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工作人员是平台最大的资产，不断激发工作人员潜能，共成长；善待每一位工作人员，关爱工作人员身心健康；</p>
+                <div class="p_split"></div>
+                <p class="p_content">对社会</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;怀感恩的心，注重社会责任，尽企业的力量，回报社会，施帮助于需要帮助的人，塑造健康企业形象</p>
+            </div>
+        </div>
+        <div class="split"></div>
+        <div class="information4">
+            <div class="information_title">
+                <p>团队成员</p>
+            </div>
+            <div class="information_explain" style="display: flex">
+                <div class="employee">
+                    <div class="employee1">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee2.jpg" >
+                        </div>
+                        <div class="employee_name">
+                            <p>赵满洲</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：负责人</p>
+                            <p>任务：用户模块的后端实现和环境的搭建。</p>
+                        </div>
+                    </div>
+                    <div class="employee2">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee1.jpg">
+                        </div>
+                        <div class="employee_name">
+                            <p>魏强</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：成员</p>
+                            <p>任务：商品模块和购物车模块的后端实现。</p>
+                        </div>
+                    </div>
+                    <div class="employee3">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee3.jpg">
+                        </div>
+                        <div class="employee_name">
+                            <p>芦传慧</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：成员</p>
+                            <p>任务：网页界面的设计和实现。</p>
+                        </div>
+                    </div>
+                    <div class="employee4">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee4.jpg">
+                        </div>
+                        <div class="employee_name">
+                            <p>席晨莉</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：成员</p>
+                            <p>任务：数据库建立与数管理入。</p>
+                        </div>
+                    </div>
+                    <div class="employee5">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee5.jpg">
+                        </div>
+                        <div class="employee_name">
+                            <p>班正正</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：成员</p>
+                            <p>任务：App基本框架的设计开发。</p>
+                        </div>
+                    </div>
+                    <div class="employee6">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee6.jpg">
+                        </div>
+                        <div class="employee_name">
+                            <p>雷子键</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：成员</p>
+                            <p>任务：参与App架构的设计。</p>
+                        </div>
+                    </div>
+                    <div class="employee7">
+                        <div class="employee_image">
+                            <img src="../image/employee/employee7.jpg">
+                        </div>
+                        <div class="employee_name">
+                            <p>李庄</p>
+                        </div>
+                        <div class="employee_information">
+                            <p>职位：成员</p>
+                            <p>任务：网页的商品详细信息页面设计和实现。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a id="register" href="./index.html" target="_blank">>>立刻加入校园微超市<<</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,314 @@
+/**
+* @Author: 芦传慧
+* @Date: 2019/11/13 20:35
+*/
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+
+/* header */
+.cart-header {
+    background: #eee;
+}
+
+.cart-header .cart-cell {
+    height: 40px;
+    line-height: 40px;
+}
+
+.cart-table .cell-check {
+    width: 6%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cart-table .cell-img {
+    width: 10%;
+    text-align: left;
+}
+
+.cart-table .cell-img .p-img {
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+
+.cart-table .cell-info {
+    width: 35%;
+    text-align: left;
+}
+
+.cart-header .cell-info {
+    width: 45%;
+    padding-left: 106px;
+}
+
+.cart-table .cell-price {
+    width: 10%;
+    text-align: center;
+}
+
+.cart-table .cell-count {
+    width: 15%;
+    text-align: center;
+}
+
+.cart-table .cell-count .count-input {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    color: #333;
+}
+
+.cart-table .cell-count .count-btn {
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cart-table .cell-total {
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cart-table .cell-opera {
+    width: 10%;
+    text-align: center;
+}
+
+/* footer */
+.cart-footer {
+    position: relative;
+    line-height: 50px;
+    background: #eee;
+    overflow: hidden;
+}
+
+.cart-footer .select-con {
+    float: left;
+    padding-left: 20px;
+}
+
+.cart-footer .delete-con {
+    float: left;
+    margin-left: 20px;
+}
+
+.cart-footer .submit-con {
+    float: right;
+}
+
+.cart-footer .submit-con .submit-total {
+    font-size: 18px;
+    color: #c60023;
+    font-weight: bold;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+
+.cart-footer .submit-con .btn-submit {
+    width: 80px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/* 错误信息 */
+.err-tip {
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}
+
+.header .search-input_cart {
+    margin-right: 1px;
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+
+.header .search-con_cart {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    padding: 30px;
+
+}
+
+.logo_cart {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icon_cart {
+    color: #c60023;
+    font-weight: bold;
+}
+
+.search-btn, .search-btn:hover, .search-btn:active {
+    color: white;
+}
+
+.crumb_cart {
+    padding-bottom: 50px;
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 50px;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid #c60023;
+}
+
+.crumb-con {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    border-top: 1px solid #bfbfbf;
+    height: 120px;
+}
+
+.t-goods {
+    width: 51%;
+    padding-left: 30px;
+    text-align: left
+}
+
+.t-price {
+    width: 13%;
+    margin-top: 25px;
+}
+
+.t-quantity {
+    width: 13%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    padding-left: 25px;
+}
+
+.count {
+    display: block;
+    width: 50px;
+    height: 20px;
+    text-align: center
+}
+
+.t-sum {
+    width: 13%;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.t-action {
+    width: 13%;
+}
+
+.crumb-con img {
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.crumb-con .t-goods a {
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.crumb-con .t-goods a:hover {
+    color: red;
+}
+
+.p-count-cart {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid rgba(199, 199, 199, 0.97);
+}
+
+.t-action div {
+    height: 30px;
+}
+
+.t-action div:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.good_cart {
+    padding: 30px 0 30px 0;
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.good_cart li {
+    border: 1px solid #bfbfbf;
+    width: 250px;
+    margin-left: 18px;
+    height: 310px;
+    padding: 20px;
+}
+.good_cart li a{
+    text-decoration: none;
+}
+.good_cart li a:hover p{
+    text-decoration: none;
+    color: red;
+}
+
+.good_cart li a img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+.good_cart li a p {
+    font-size: 15px;
+    color: black
+}
+.good_cart li a p:last-child {
+    color: red;
+    font-size: 13px
+}
+

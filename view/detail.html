@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: weiqiang
+  @Date: 2019/11/1 11:24
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>=MMal</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../page/common/nav/index.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <link rel="stylesheet" href="../page/detail/index.css">
+    <script src="../page/detail/index.js"></script>
+    <link rel="stylesheet" href="../page/common/nav/iconfont.css">
+</head>
+<body>
+
+<!--登录模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width: 440px;margin: 0 auto;top: 100px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h2 class="modal-title" id="myModalLabel" style="text-align: center">欢迎来到西农微超市</h2>
+            </div>
+            <div class="modal-body">
+                <div style="width: 150px;height: 100px;margin: 0 auto ;margin-top: 20px;margin-bottom: -20px;">
+                    <img src="../image/icon/logo.png" alt="" style="width: 100%;">
+                </div>
+                <div class="user-con">
+                    <div class="user-box">
+                        <div class="error-item">
+                            <p class="err-msg" style="display: none;">Error</p>
+                        </div>
+                        <div class="user-item" style="margin-top: 30px;">
+                            <label class="user-label" for="username">
+                                <span class="icon iconfont"></span>:
+                            </label>
+                            <input type="text" class="user-content" id="username" placeholder="请输入用户名"
+                                   autocomplete="off"/>
+                        </div>
+                        <div class="user-item">
+                            <label class="user-label" for="password">
+                                <span class="icon iconfont"></span>:
+                            </label>
+                            <input type="password" class="user-content" id="password" placeholder="请输入密码"/>
+                        </div>
+                        <div class="login">
+                            <a class="user-btn" id="submit">登录</a>
+                        </div>
+                        <div style="width: 300px;margin-top:30px;text-align: right">
+                            <a href="">忘记密码</a>&nbsp;&nbsp;
+                            <a href="">免费注册</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--注册模态框-->
+<div class="modal fade" id="myRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width: 440px;margin: 0 auto;top: 100px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title" style="text-align: center">欢迎加入西农微超市</h3>
+            </div>
+            <div class="modal-body">
+                <div style="width: 130px;height: 100px;margin: 0 auto ;margin-top: 20px;margin-bottom: -20px;">
+                    <img src="../image/icon/logo.png" alt="" style="width: 100%;">
+                </div>
+                <div class="user-con">
+                    <div class="user-box">
+                        <div class="user-item">
+                            <span class="error_register error_username">用户名不能为空</span>
+                            <label class="user-label" for="username">
+                                <span class="icon iconfont icon-icon"></span>
+                            </label>:
+                            <input class="user-content register_username" id="username_" placeholder="请输入用户名"
+                                   autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <span class="error_register error_password">密码输不能为空</span>
+                            <label class="user-label" for="password">
+                                <span class="icon iconfont icon-mima"></span>
+                            </label>:
+                            <input type="password" class="user-content register_password" id="password_"
+                                   placeholder="请输入密码" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <span class="error_register error_confirm">密码输入不能为空</span>
+                            <label class="user-label" for="password-confirm_">
+                                <span class="icon iconfont icon-mima"></span>
+                            </label>:
+                            <input type="password" class="user-content register_confirm" id="password-confirm_"
+                                   placeholder="请再次输入密码" autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <span class="error_register error_phone">手机号不能为空</span>
+                            <label class="user-label" for="phone_">
+                                <span class="icon iconfont icon-shouji"></span>
+                            </label>:
+                            <input class="user-content register_phone" id="phone_" placeholder="请输入手机号"
+                                   autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <span class="error_register error_email">邮箱不能为空</span>
+                            <label class="user-label" for="email_">
+                                <span class="icon iconfont icon-youxiang"></span>
+                            </label>:
+                            <input class="user-content register_email" id="email_" placeholder="请输入邮箱"
+                                   autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <span class="error_register error_question">密码问题不能为空</span>
+                            <label class="user-label" for="question_">
+                                <span class="icon iconfont icon-wenti"></span>
+                            </label>:
+                            <input class="user-content register_question" id="question_" placeholder="请输入密码提示问题"
+                                   autocomplete="off">
+                        </div>
+                        <div class="user-item">
+                            <span class="error_register error_answer">问题答案不能为空</span>
+                            <label class="user-label" for="answer_">
+                                <span class="icon iconfont icon-huida"></span>
+                            </label>:
+                            <input class="user-content register_answer" id="answer_" placeholder="请输入密码提示问题答案"
+                                   autocomplete="off">
+                        </div>
+                        <a class="btnn btn-submit" id="submit_">立即注册</a>
+                        <div class="link-item">
+                            <a class="link" href="./user_login.html">已有帐号，去登录>></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span id="user_login" class="link js-login">登录</span>
+                <span id="user_register" class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user_center.html">用户中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="w">
+        <a href="./index.html" style="float:left;margin-top: 20px;margin-right: 30px;"><img src="../image/icon/big.png" alt=""></a>
+        <div class="search-con">
+            <input class="search-input" id="search-input" placeholder="请输入商品名称"/>
+            <button class="btnn search-btn" id="search-btn">搜索</button>
+        </div>
+    </div>
+</div>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a class="link" href="./index.html">首页</a>
+            <span>></span>
+            <span class="link-text">商品详情</span>
+        </div>
+    </div>
+</div>
+<div class="page-container w">
+    <div class="intro-wrap clear">
+        <div class="p-img-wrap">
+            <div class="main-img-con">
+                <img class="main-img" src="../image/goods/detail11.jpg">
+            </div>
+            <ul class="p-img-list">
+                <li class="p-img-item">
+                    <img class="p-img" src="../image/goods/detail11.jpg">
+                </li>
+                <li class="p-img-item">
+                    <img class="p-img" src="../image/goods/detail12.jpg">
+                </li>
+                <li class="p-img-item">
+                    <img class="p-img" src="../image/goods/detail13.jpg">
+                </li>
+            </ul>
+        </div>
+        <div class="p-info-wrap"><p class="p-name">【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+            <p class="p-subtitle">店铺优惠 满99减5</p>
+            <div class="info-item p-price-con">
+                <span class="label">价格:</span>
+                <span class="p-price">￥29.9</span>
+            </div>
+            <div class="info-item p-quantity-con">
+                <span class="label">库存:</span>
+                <span id="p-nums">0</span>
+            </div>
+            <div class="info-item">
+                <span class="label">数量:</span>
+                <input id="count" class="p-count" value="1" readonly="readonly">
+                <span class="p-count-btn plus" id="plus">+</span>
+                <span class="p-count-btn minus" id="minus">-</span>
+            </div>
+            <div class="info-item"><a class="btnn cart-add">加入购物车</a></div>
+        </div>
+    </div>
+    <div class="detail-wrap">
+        <div class="detail-tab-con">
+            <ul class="tab-list">
+                <li class="tab-item active">商品详情</li>
+            </ul>
+        </div>
+        <div class="detail-con">
+            <p>
+                <img alt="miaoshu.jpg" src="../image/goods/show1.jpg"
+                     width="790" height="444"><br>
+            </p>
+            <p><img alt="miaoshu2.jpg" src="../image/goods/show11.jpg"
+                    width="790" height="1441">
+                <img alt="miaoshu3.jpg" src="../image/goods/show12.jpg"
+                     width="790" height="1442">
+                <img alt="miaoshu4.jpg" src="../image/goods/show13.jpg"
+                     width="790" height="1441"><br>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="w">
+        <!--        <div class="links">-->
+        <!--            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |-->
+        <!--            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |-->
+        <!--            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |-->
+        <!--            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>-->
+        <!--        </div>-->
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+</body>
+</html>

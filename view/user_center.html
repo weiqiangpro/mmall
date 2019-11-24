@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: 芦传慧
+  @Date: 2019/11/13 20:33
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>MMal</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../page/user_center/index.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <link rel="stylesheet" href="../page/user_center/index.css">
+    <link rel="stylesheet" href="../page/user_center/iconfont.css">
+</head>
+<body>
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user_center.html">用户中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="w" style="height: 120px;padding-top: 10px;">
+        <div style="width: 60%;position: absolute;left: 0;">
+            <a href=""> <img src="../image/icon/logo.png" alt="">
+            </a>
+            <span class="logo_cart">超市</span>&nbsp;&nbsp;
+            <a href=""
+               style="font-weight: normal;font-size: 19px;color: white;position: relative;top: -13px;left: 10px;">我的购物车</a>
+            <a href=""
+               style="color: #cbcbcb;border: 1px solid white;padding: 5px 10px;border-radius: 15px;position: relative;top: 20px;left: -90px;">返回超市首页</a>
+            <a href=""
+               style="font-weight: normal;font-size: 16px;color: white;position: relative;left: -10px;top: 5px;">首页</a>
+            <a href="" style="font-weight: normal;font-size: 16px;color: white;position: relative;left: 20px;top: 5px;">个人中心</a>
+        </div>
+        <div style="width: 40%;display: flex;flex-direction: row;margin-top: 30px;position: absolute;right: 0;">
+            <input class="search-input_cart" id="search-input" placeholder="请输入商品名称"/>
+            <div class="search-btn" id="search-btn">搜索</div>
+        </div>
+    </div>
+</div>
+
+<div class="crumb_cart" style="border-top: none;">
+    <div class="w">
+        <div class="center_left">
+            <ul>
+                <li class="select red" id="information">个人信息</li>
+                <li class="select" id="place">收货地址</li>
+                <li class="select" id="passwd">修改密码</li>
+                <li class="select">我的订单</li>
+                <li class="select">购物车</li>
+            </ul>
+        </div>
+        <div class="center_right_1 center_right"  >
+            <div class="information">基本信息</div>
+            <img src="../image/goods/detail12.jpg" alt="">
+            <br>
+            <ul>
+                <li style="left: 15px">用户名:&nbsp;&nbsp;<span>jd_4e86efd7415c9</span></li>
+                <li style="left: 28px">昵称:&nbsp;&nbsp;<input type="text" class="name" value="魏小强"
+                                                             style="padding: 1px 1px 1px 5px;width: 180px;"></li>
+                <li style="left: 28px">性别:&nbsp;&nbsp;
+                    <input type="radio" name="sex" value="1" checked>男生
+                    &nbsp;&nbsp;
+                    <input type="radio" name="sex" value="0">女生
+                </li>
+                <li style="left: 28px">生日:&nbsp;&nbsp;<input type="date" value="2019-11-23" style="width: 180px;">
+                </li>
+                <li style="left: 28px">手机:&nbsp;&nbsp;<input type="text" class="phone" value="15522672786"
+                                                             style="padding: 1px 1px 1px 5px;width: 180px;"></li>
+                <li style="left: 28px">邮箱:&nbsp;&nbsp;<input type="text" class="email" value="weiqiangpro@163.com"
+                                                             style="padding: 1px 1px 1px 5px;width: 180px;"></li>
+                <li>个人签名:&nbsp;&nbsp;<textarea class="person"></textarea></li>
+            </ul>
+        </div>
+        <div class="center_right_2 center_right" style="display: none;">
+            <div  class="btnn add">新增收货地址</div>
+            <br><br>
+            <div class="place">
+                <div   class="delete"><span class="icon iconfont icon-guanbi"></span></div>
+                <ul>
+                    <li>魏强 陕西<span class="icon iconfont icon-shezhi"></span></li>
+                    <li style="left: 15px">收货人:<span>jd_4e86efd7415c9</span></li>
+                    <li style="left: 15px">所在地:<span>魏小强</span></li>
+                    <li style="left: 28px">地址:<span>天津市静海区王口镇民主村</span></li>
+                    <li style="left: 28px">手机:<span>西区10-412</span></li>
+                    <li>固定电话:<span>68836105</span></li>
+                    <li>电子邮箱:<span>280803590@qq.com</span></li>
+                </ul>
+                <div class="edit">编辑</div>
+            </div>
+            <div class="place">
+                <div   class="delete"><span class="icon iconfont icon-guanbi"></span></div>
+                <ul>
+                    <li>魏强 陕西<span class="icon iconfont icon-shezhi"></span></li>
+                    <li style="left: 15px">收货人:<span>jd_4e86efd7415c9</span></li>
+                    <li style="left: 15px">所在地:<span>魏小强</span></li>
+                    <li style="left: 28px">地址:<span>天津市静海区王口镇民主村</span></li>
+                    <li style="left: 28px">手机:<span>西区10-412</span></li>
+                    <li>固定电话:<span>68836105</span></li>
+                    <li>电子邮箱:<span>280803590@qq.com</span></li>
+                </ul>
+                <div class="edit">编辑</div>
+            </div>
+
+
+
+        </div>
+        <div class="center_right_3 center_right" style="display: none">
+            <div class="information">修改密码</div>
+            <img src="../image/goods/detail12.jpg" alt="">
+            <br>
+            <ul>
+                <li><span class="icon iconfont icon-mima"></span>:
+                    <input type="password" placeholder="请输入原密码">
+                </li>
+                <li><span class="icon iconfont icon-xinmima"></span>:
+                    <input type="text" placeholder="请输入新密码">
+                </li>
+                <li><span class="icon iconfont icon-xinmima"></span>:
+                    <input type="text" placeholder="再次输入新密码">
+                </li>
+                <div class="btnn">确认修改</div>
+            </ul>
+        </div>
+    </div>
+</div>
+<
+
+<!--精品推荐-->
+<div class="w" style="margin-top: 70px;">
+
+</div>
+
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

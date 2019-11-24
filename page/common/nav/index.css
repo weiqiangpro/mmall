@@ -1,0 +1,258 @@
+/*
+* @Author: weiqiang
+* @Date: 2019/11/1 11:24
+*/
+
+.nav {
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+
+.nav .user {
+    float: left;
+}
+
+.nav .user.login {
+    display: none;
+}
+
+.nav .user .link {
+    margin-right: 5px;
+}
+
+.nav .nav-list {
+    float: right;
+}
+
+.nav .nav-list .nav-item {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.w {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.link {
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #e80012;
+}
+
+#myModal .user-con {
+    margin: 0 auto;
+    width: 400px;
+    background: #fff;
+}
+
+#myModal .user-con .user-title {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+#myModal .user-con .user-box {
+    padding: 20px;
+    padding-left: 50px;
+}
+
+/* 错误提示框 */
+#myModal .user-con .user-box .error-item {
+    position: absolute;
+    padding: 4px 0 4px 40px;
+    margin-bottom: 10px;
+    color: red;
+    /*display: none;*/
+}
+
+/* 错误图标 */
+#myModal .user-con .user-box .error-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    font-size: 14px;
+    margin-top: -7px;
+}
+
+#myModal .user-con .user-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#myModal .user-con .user-item .user-label {
+    position: inherit;
+    left: 1px;
+    top: 5px;
+    width: 40px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#myModal .user-con .user-item .user-content {
+    position: relative;
+    top: 8px;
+    padding: 10px 0 10px 10px;
+    width: 250px;
+    height: 35px;
+    line-height: 18px;
+    font-size: 15px;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+#myModal .user-con .login {
+    margin-top: 30px;
+    cursor: pointer;
+    margin-left: 35px;
+    width: 80%;
+    padding: 2px 0;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    background: #c60023;
+    border-radius: 12px;
+}
+
+#myModal .user-con .login .user-btn {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*注册*/
+/* 表单框 */
+#myRegister .user-con {
+    text-align: center;
+    margin: 0 auto;
+    width: 400px;
+    background: #fff;
+}
+
+#myRegister .user-con .user-title {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+#myRegister .user-con .user-box {
+    padding: 20px;
+}
+
+/* 错误提示框 */
+#myRegister .user-con .user-box .error-item {
+    position: relative;
+    padding: 4px 0 4px 40px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    color: red;
+    background: #fde9e9;
+    display: none;
+}
+
+/* 错误图标 */
+#myRegister .user-con .user-box .error-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    font-size: 14px;
+    margin-top: -7px;
+}
+
+#myRegister .user-con .user-item {
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#myRegister .user-con .user-item .user-label {
+    position: inherit;
+    left: 1px;
+    top: 5px;
+    width: 40px;
+    line-height: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#myRegister .user-con .user-item .user-content {
+    position: relative;
+    top: 5px;
+    padding: 10px 0 10px 15px;
+    width: 290px;
+    height: 35px;
+    line-height: 18px;
+    font-size: 15px;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+#myRegister .user-con .btn-submit {
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 310px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* 跳转链接 */
+#myRegister .user-con .link-item {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#myRegister .user-con .link-item .link {
+    margin-left: 10px;
+    color: #999;
+}
+
+#myRegister .error_register {
+    font-size: 14px;
+    position: absolute;
+    top: -14px;
+    left: 62px;
+    color: red;
+    display: none;
+}
+
+.alert_ {
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    margin-left: -300px;
+
+}
+.alert_ img{
+    margin-left: 10px;
+    margin-top: 35px;
+    height: 50px;
+}
+.alert_ span{
+    position: relative;
+    left: 10px;
+    top: 20px;
+    font-size: 23px;
+}
+.alert_ > div {
+    width: 350px;
+    margin: 0 auto;
+    top: 100px;
+    border-radius: 20px;
+    height: 150px;
+}

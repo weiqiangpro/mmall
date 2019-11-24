@@ -1,0 +1,219 @@
+/**
+* @Author: 芦传慧
+* @Date: 2019/11/13 20:35
+*/
+
+
+.header {
+    background-color: #e2231a;
+    height: 90px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.logo_cart {
+    position: relative;
+    top: 10px;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+.header .search-input_cart {
+    margin-left: 50px;
+    margin-right: 1px;
+    width: 280px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+
+.search-btn, .search-btn:hover, .search-btn:active {
+    cursor: pointer;
+    width: 60px;
+    position: relative;
+    top: 2px;
+    left: -3px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    height: 31px;
+    background-color: #eaeaea;
+    color: black;
+}
+
+.center_left {
+    float: left;
+    width: 10%;
+    margin-top: 30px;
+}
+
+.center_left ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.center_left ul li {
+    cursor: pointer;
+    height: 27px;
+}
+
+.center_left ul li:hover {
+    color: red;
+}
+
+.red {
+    font-weight: bold;
+    color: red;
+}
+
+.center_right_1 {
+    padding-top: 15px;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 90%;
+    background-color: white;
+    height: 500px;
+}
+
+.center_right_1 ul {
+    width: 500px;
+    margin-top: 45px;
+    margin-left: 70px;
+    list-style: none;
+}
+
+.center_right_1 ul li {
+    font-size: 14px;
+    position: relative;
+    height: 40px;
+}
+
+.center_right_1 > div:hover {
+    color: red;
+}
+
+textarea {
+    width: 650px;
+    height: 140px;
+    position: relative;
+    left: 70px;
+    top: -20px;
+    resize: none
+}
+
+
+.information {
+    margin-left: 50px;
+    width: 65px;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+    margin-bottom: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.center_right_2 {
+    padding-top: 15px;
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 80%;
+    background-color: white;
+    padding-bottom: 50px;
+}
+.center_right_2 .add{
+   margin-left: 30px;
+}
+.center_right_2 li:first-child{
+    left: -13px;font-size: 14px;font-weight: bold;margin-top: -10px;
+}
+.center_right_2 li:first-child span{
+    font-size: 15px;
+    cursor: pointer;
+}
+.center_right_2 li span{
+    position: relative;
+    left: 5px;
+}
+.center_right_2 .place{
+   height: 230px;width: 800px;margin-left: 38px;margin-bottom: 30px;border: 1px solid #000;
+}
+.center_right_2 ul {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 60px;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.center_right_2 ul li {
+    font-size: 13px;
+    position: relative;
+    height: 30px;
+}
+
+.delete {
+    float: right;
+    margin-right: 5px;
+    line-height: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.edit {
+    cursor: pointer;
+    float: right;
+    margin-right: 40px;
+    margin-top: -65px;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 15px;
+    color: #005ea7;
+}
+.edit:hover,.delete:hover{
+    color: red;
+}.center_right_3 {
+     padding-top: 15px;
+     margin-top: 50px;
+     margin-left: 10%;
+     width: 90%;
+     background-color: white;
+     height: 350px;
+ }
+
+.center_right_3 ul {
+    width: 500px;
+    margin-top: 55px;
+    margin-left: 70px;
+    list-style: none;
+}
+.center_right_3 input{
+    font-size: 17px;
+    height: 33px;
+    padding: 1px 1px 1px 5px;width: 250px;
+}
+.center_right_3 ul li {
+    font-size: 14px;
+    position: relative;
+    height: 60px;
+}
+.center_right_3 .btnn{
+    margin-left: 30px;
+    margin-top:  10px;
+}
+.center_right_3 > div:hover {
+    color: red;
+}
+.center_right img{
+ width: 200px;height: 200px;float: right;margin-right: 50px;padding: 10px;border: 1px solid rgba(209,209,209,0.93);
+}
