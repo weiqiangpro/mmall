@@ -19,6 +19,56 @@
     <link rel="stylesheet" href="../page/user_center/iconfont.css">
 </head>
 <body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">编辑收货地址</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="edit_place" style="font-size: 15px; list-style: none;">
+                    <li>
+                        <div><span class="icon iconfont icon-xinghao" style="font-size:2px;color:red;"></span>地址别名:</div>
+                        <div><input type="text" ></div>
+                    </li>
+                    <li>
+                        <div><span class="icon iconfont icon-xinghao" style="font-size:2px;color:red;"></span>收货人:</div>
+                        <div><input type="text" style="width: 200px;"></div>
+                    </li>
+                    <li>
+                        <div><span class="icon iconfont icon-xinghao" style="font-size:2px;color:red;"></span>所在地:</div>
+                        <div><input type="text" style="width: 250px;"></div>
+                    </li>
+                    <li>
+                        <div><span class="icon iconfont icon-xinghao" style="font-size:2px;color:red;"></span>详细地址:</div>
+                        <div><input type="text" style="width: 400px;"></div>
+                    </li>
+                    <li>
+                        <div><span class="icon iconfont icon-xinghao" style="font-size:2px;color:red;"></span>手机:</div>
+                        <div><input type="text" style="width: 200px;"></div>
+                    </li>
+                    <li>
+                        <div>固定电话:</div>
+                        <div><input type="text" style="width: 150px;"></div>
+                    </li>
+                    <li>
+                        <div>电子邮箱:</div>
+                        <div><input type="text" style="width: 400px;"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btnn ">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="nav">
     <div class="w">
         <div class="user-info">
@@ -41,7 +91,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="link" href="./order-list.html">我的订单</a>
+                <a class="link" href="./order.html">我的订单</a>
             </li>
             <li class="nav-item">
                 <a class="link" href="./user_center.html">用户中心</a>
@@ -55,16 +105,16 @@
 <div class="header">
     <div class="w" style="height: 120px;padding-top: 10px;">
         <div style="width: 60%;position: absolute;left: 0;">
-            <a href=""> <img src="../image/icon/logo.png" alt="">
+            <a href="index.html"> <img src="../image/icon/logo.png" alt="">
             </a>
             <span class="logo_cart">超市</span>&nbsp;&nbsp;
-            <a href=""
+            <a href="cart.html"
                style="font-weight: normal;font-size: 19px;color: white;position: relative;top: -13px;left: 10px;">我的购物车</a>
-            <a href=""
+            <a href="index.html"
                style="color: #cbcbcb;border: 1px solid white;padding: 5px 10px;border-radius: 15px;position: relative;top: 20px;left: -90px;">返回超市首页</a>
-            <a href=""
+            <a href="index.html"
                style="font-weight: normal;font-size: 16px;color: white;position: relative;left: -10px;top: 5px;">首页</a>
-            <a href="" style="font-weight: normal;font-size: 16px;color: white;position: relative;left: 20px;top: 5px;">个人中心</a>
+            <a href="user_center.html" style="font-weight: normal;font-size: 16px;color: white;position: relative;left: 20px;top: 5px;">个人中心</a>
         </div>
         <div style="width: 40%;display: flex;flex-direction: row;margin-top: 30px;position: absolute;right: 0;">
             <input class="search-input_cart" id="search-input" placeholder="请输入商品名称"/>
@@ -90,14 +140,13 @@
             <br>
             <ul>
                 <li style="left: 15px">用户名:&nbsp;&nbsp;<span>jd_4e86efd7415c9</span></li>
-                <li style="left: 28px">昵称:&nbsp;&nbsp;<input type="text" class="name" value="魏小强"
-                                                             style="padding: 1px 1px 1px 5px;width: 180px;"></li>
+                <li style="left: 28px">昵称:&nbsp;&nbsp;<input type="text" class="name" value="魏小强" style="padding: 1px 1px 1px 5px;width: 180px;"></li>
                 <li style="left: 28px">性别:&nbsp;&nbsp;
                     <input type="radio" name="sex" value="1" checked>男生
                     &nbsp;&nbsp;
                     <input type="radio" name="sex" value="0">女生
                 </li>
-                <li style="left: 28px">生日:&nbsp;&nbsp;<input type="date" value="2019-11-23" style="width: 180px;">
+                <li style="left: 28px">生日:&nbsp;&nbsp;<input type="date"  value="2019-11-23" style="width: 180px;">
                 </li>
                 <li style="left: 28px">手机:&nbsp;&nbsp;<input type="text" class="phone" value="15522672786"
                                                              style="padding: 1px 1px 1px 5px;width: 180px;"></li>
@@ -107,25 +156,24 @@
             </ul>
         </div>
         <div class="center_right_2 center_right" style="display: none;">
-            <div  class="btnn add">新增收货地址</div>
+            <div  class="btnn add" id="add">新增收货地址</div>
             <br><br>
             <div class="place">
-                <div   class="delete"><span class="icon iconfont icon-guanbi"></span></div>
+                <div   class="delete"><span>x</span></div>
                 <ul>
-                    <li>魏强 陕西<span class="icon iconfont icon-shezhi"></span></li>
-                    <li style="left: 15px">收货人:<span>jd_4e86efd7415c9</span></li>
+                    <li><span>魏强 陕西</span><span class="icon iconfont icon-shezhi edit"></span></li>
+                    <li style="left: 15px">收货人:<span >jd_4e86efd7415c9</span></li>
                     <li style="left: 15px">所在地:<span>魏小强</span></li>
                     <li style="left: 28px">地址:<span>天津市静海区王口镇民主村</span></li>
                     <li style="left: 28px">手机:<span>西区10-412</span></li>
                     <li>固定电话:<span>68836105</span></li>
                     <li>电子邮箱:<span>280803590@qq.com</span></li>
                 </ul>
-                <div class="edit">编辑</div>
             </div>
             <div class="place">
-                <div   class="delete"><span class="icon iconfont icon-guanbi"></span></div>
+                <div  class="delete"><span class="icon iconfont icon-guanbi"></span></div>
                 <ul>
-                    <li>魏强 陕西<span class="icon iconfont icon-shezhi"></span></li>
+                    <li><span>魏强 陕西</span><span class="icon iconfont icon-shezhi edit"></span></li>
                     <li style="left: 15px">收货人:<span>jd_4e86efd7415c9</span></li>
                     <li style="left: 15px">所在地:<span>魏小强</span></li>
                     <li style="left: 28px">地址:<span>天津市静海区王口镇民主村</span></li>
@@ -133,11 +181,7 @@
                     <li>固定电话:<span>68836105</span></li>
                     <li>电子邮箱:<span>280803590@qq.com</span></li>
                 </ul>
-                <div class="edit">编辑</div>
             </div>
-
-
-
         </div>
         <div class="center_right_3 center_right" style="display: none">
             <div class="information">修改密码</div>

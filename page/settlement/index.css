@@ -104,6 +104,7 @@
 }
 
 .shouhuo .dd_name {
+    position: relative;
     cursor: pointer;
     border: 1px solid #bababa;
     display: inline-block;
@@ -116,12 +117,25 @@
     float: left;
     margin-top: -2px;
 }
-.active .dd_name{
+.shouhuo .dd_name .icon-dui{
+    position: absolute;
+    bottom: -7px;
+    right: -5px;
+    color: #e4393c;
+    display: none;
+}
+
+.active .dd_name {
     border: 2px solid #e4393c;
+}
+.active .dd_name .icon-dui{
+    display: inline-block;
 }
 .shouhuo .dd_name:hover{
     border: 2px solid #e4393c;
 }
+
+
 .shouhuo .dd_name:hover+.dd_con  {
     color: #e4393c;
 }
@@ -146,7 +160,9 @@
 .shouhuo .dd_con:hover{
    color: #e4393c;
 }
+
 .dingdan .way{
+    position: relative;
     cursor: pointer;
     border: 1px solid #bababa;
     display: inline-block;
@@ -159,8 +175,18 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.way .icon-dui{
+    position: absolute;
+    bottom: -7px;
+    right: -5px;
+    color: #e4393c;
+    display: none;
+}
 .dingdan .dd_active{
     border: 2px solid #e4393c;
+}
+.dingdan .dd_active .icon-dui{
+    display: inline-block;
 }
 .dingdan .way:hover{
     border: 2px solid #e4393c;

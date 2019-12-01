@@ -1,11 +1,9 @@
 $(function () {
 
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
 
     $(".plus").click(function () {
-        // var money = parseInt($(this).parent().parent().children('.t-price').text());
         var money = parseFloat($(this).parent().parent().children('.t-price').text().slice(1));
-        console.log(typeof money);
         var $count = $(this).parent().children(".count");
         var n = parseInt($($count).val());
         $($count).val(n + 1);

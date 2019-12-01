@@ -81,6 +81,11 @@
     height: 500px;
 }
 
+.edit_place li {
+    height: 30px;
+    margin: 5px 0;
+}
+
 .center_right_1 ul {
     width: 500px;
     margin-top: 45px;
@@ -128,23 +133,36 @@ textarea {
     background-color: white;
     padding-bottom: 50px;
 }
-.center_right_2 .add{
-   margin-left: 30px;
+
+.center_right_2 .add {
+    margin-left: 30px;
 }
-.center_right_2 li:first-child{
-    left: -13px;font-size: 14px;font-weight: bold;margin-top: -10px;
+
+.center_right_2 li:first-child {
+    left: -13px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -10px;
 }
-.center_right_2 li:first-child span{
+
+.center_right_2 li:first-child span {
     font-size: 15px;
     cursor: pointer;
 }
-.center_right_2 li span{
+
+.center_right_2 li span {
     position: relative;
     left: 5px;
 }
-.center_right_2 .place{
-   height: 230px;width: 800px;margin-left: 38px;margin-bottom: 30px;border: 1px solid #000;
+
+.center_right_2 .place {
+    height: 230px;
+    width: 800px;
+    margin-left: 38px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
 }
+
 .center_right_2 ul {
     width: 70%;
     margin-top: 20px;
@@ -169,27 +187,17 @@ textarea {
     padding: 8px;
     cursor: pointer;
 }
-
-.edit {
-    cursor: pointer;
-    float: right;
-    margin-right: 40px;
-    margin-top: -65px;
-    font-size: 17px;
-    padding: 8px;
-    border-radius: 15px;
-    color: #005ea7;
-}
-.edit:hover,.delete:hover{
+.delete:hover span{
     color: red;
-}.center_right_3 {
-     padding-top: 15px;
-     margin-top: 50px;
-     margin-left: 10%;
-     width: 90%;
-     background-color: white;
-     height: 350px;
- }
+}
+.center_right_3 {
+    padding-top: 15px;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 90%;
+    background-color: white;
+    height: 350px;
+}
 
 .center_right_3 ul {
     width: 500px;
@@ -197,23 +205,52 @@ textarea {
     margin-left: 70px;
     list-style: none;
 }
-.center_right_3 input{
+
+.center_right_3 input {
     font-size: 17px;
     height: 33px;
-    padding: 1px 1px 1px 5px;width: 250px;
+    padding: 1px 1px 1px 5px;
+    width: 250px;
 }
+
 .center_right_3 ul li {
     font-size: 14px;
     position: relative;
     height: 60px;
 }
-.center_right_3 .btnn{
+
+.center_right_3 .btnn {
     margin-left: 30px;
-    margin-top:  10px;
+    margin-top: 10px;
 }
+
 .center_right_3 > div:hover {
     color: red;
 }
-.center_right img{
- width: 200px;height: 200px;float: right;margin-right: 50px;padding: 10px;border: 1px solid rgba(209,209,209,0.93);
+
+.center_right img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 50px;
+    padding: 10px;
+    border: 1px solid rgba(209, 209, 209, 0.93);
+}
+
+.edit_place {
+    margin-left: 30px;
+}
+
+.edit_place li {
+    height: 57px;
+    position: relative;
+}
+
+.edit_place li div:first-child {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.edit_place li input{
+    font-size: 15px;
+    height: 28px;
 }
