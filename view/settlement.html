@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: 芦传慧
+  @Date: 2019/11/13 20:33
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>MMal</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <script src="../page/settlement/index.js"></script>
+    <link rel="stylesheet" href="../page/settlement/index.css">
+    <link rel="stylesheet" href="../page/settlement/iconfont.css">
+</head>
+<body>
+<!--头部-->
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user_center.html">用户中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="header">
+    <div class="w">
+        <div style="float:left;margin-top: 20px;margin-right: 60px;"><img src="../image/icon/big.png" alt=""><span
+                style="font-size: 20px;position: relative;top: 10px;">结算页</span></div>
+        <div class="stepflex" id="#sflex03" style="margin-left: 40px;margin-top: 40px;">
+            <dl class="first done">
+                <dt class="s-num">1</dt>
+                <dd class="s-text">1.我的购物车<s></s><b></b></dd>
+            </dl>
+            <dl class="normal doing">
+                <dt class="s-num">2</dt>
+                <dd class="s-text">2.填写核对订单信息<s></s><b></b></dd>
+            </dl>
+            <dl class="normal last">
+                <dt class="s-num">3</dt>
+                <dd class="s-text">3.成功提交订单<s></s><b></b></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!--填写订单-->
+<div class="w" style="margin-top: 130px;">
+    <p style="font-size: 18px;"> 填写并核对订单信息 </p>
+    <div style="width: 100%;border: 1px solid #bfbfbf;padding: 20px;">
+        <div class="dingdan">
+            <p style="font-weight: bold;font-size: 15px">收货人信息</p>
+            <div class="shouhuo active">
+                <span class="dd_name">魏强</span>
+                <div class="dd_con">
+                    魏强 陕西 咸阳市 杨陵区 城区 西北农林科技大学北校区西区 西区超 155****2786
+                    <span class="dd_edit">编辑</span>
+                </div>
+            </div>
+            <div class="shouhuo">
+                <span class="dd_name">魏强</span>
+                <div class="dd_con">
+                    魏强 陕西 咸阳市 杨陵区 城区 西北农林科技大学北校区西区 西区超 155****2786
+                    <span class="dd_edit">编辑</span>
+                </div>
+            </div>
+            <div style="margin-top: 20px;cursor: pointer;margin-left: 20px;">更多地址</div>
+        </div>
+        <div class="dingdan">
+            <p  style="font-weight: bold;font-size: 15px;margin-top: 10px;">支付方式</p>
+            <span class="way dd_active">货到付款</span> <span class="way">在线支付</span>
+        </div>
+        <div class="dingdan" style="border-bottom: none;">
+            <p style="font-weight: bold;font-size: 15px;margin-top: 10px;">送货清单</p>
+            <div class="product" style="font-size: 16px;border-bottom: 1px solid #b9b9b9;margin-bottom: 15px;padding:5px 0;background-color:#eee;">
+                <div class="" style="width: 61%;padding-left: 20px;">物品</div>
+                <div class="" style="width: 13%;">单价</div>
+                <div class="" style="width: 13%;">数量</div>
+                <div class="" style="width: 13%;">总价</div>
+            </div>
+            <div class="product" style="background-color:white;">
+                <div class="product_1" style="width: 61% ">
+                    <div class="product_1_img"><img src="../image/goods/detail12.jpg" alt=""></div>
+                    <div class="product_1_font" style="margin-left: 20px;">
+                        <div style="font-size: 16px;margin-top: 60px;">【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</div>
+                    </div>
+                </div>
+                <div class="product_2" style="width: 13%;">￥<span>10.01</span></div>
+                <div class="product_2" style="width: 13%;">x<span>1</span></div>
+                <div class="product_2" style="width: 13%;">￥<span>10.01</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="sum_1">
+        <span style="position: relative;right: 20px;">1 件商品，总商品金额：</span>
+        <span>￥19.90</span>
+    </div>
+    <div class="sum_2">
+        <div class="sum_1">
+            <span style="position: relative;right: 20px;font-size: 15px">应付金额：</span>
+            <span style="font-size: 20px;color:#e4393c;font-weight: bold">￥19.90</span>
+        </div>
+        <br><br><br>
+        <div class="sum_1" style="margin-top: 5px;">
+            <span >
+                寄送至：
+                <span>陕西 咸阳市 杨陵区 城区 西北农林科技大学北校区西区 西区超</span>
+                收货人：
+                <span>魏强</span>
+                <span> 155****2786</span>
+            </span>
+        </div>
+    </div>
+    <div class="btnn" id="send" style="float: right;margin: 10px 15px ;">提交订单</div>
+</div>
+
+
+<!--精品推荐-->
+<div class="w" style="margin-top: 70px;">
+    <p style="text-align: center;font-size: 15px"><span class="icon iconfont" style="font-size: 20px;color: red"></span>&nbsp;购物车帮你选——精品推荐
+    </p>
+    <ul class="good_cart">
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail12.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail13.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+    </ul>
+    <ul class="good_cart">
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail12.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail13.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--尾部-->
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

@@ -31,7 +31,8 @@ function alert_(mes) {
 
 function click() {
     $("#user_login").click(function () {
-        $('#myModal').modal('toggle');
+        // $('#myModal').modal('toggle');
+        alert_("哈哈哈");
     });
     $("#user_register").click(function () {
         $('#myRegister').modal('toggle');

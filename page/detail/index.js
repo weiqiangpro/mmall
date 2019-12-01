@@ -18,6 +18,10 @@ $(function () {
     $(".p-img-list").on('mouseover','.p-img',function(e) {
             var src = $(this)[0].src;
             $(".main-img").attr("src",src);
-    })
+    });
 
+    $("#addCart").click(function () {
+    //   发送加入购物车请求
+        window.location.href = "cart.html"
+    })
 });

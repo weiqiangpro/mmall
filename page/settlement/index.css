@@ -1,0 +1,200 @@
+/*
+* @Author: weiqiang
+* @Date: 2019/11/29 16:34
+*/
+.good_cart {
+    padding: 30px 0 30px 0;
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.good_cart li {
+    border: 1px solid #bfbfbf;
+    width: 250px;
+    margin-left: 18px;
+    height: 310px;
+    padding: 20px;
+}
+
+.good_cart li a {
+    text-decoration: none;
+}
+
+.good_cart li a:hover p {
+    text-decoration: none;
+    color: red;
+}
+
+.good_cart li a img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.good_cart li a p {
+    font-size: 15px;
+    color: black
+}
+
+.good_cart li a p:last-child {
+    color: red;
+    font-size: 13px
+}
+
+.stepflex {
+    display: block;
+    border-top: 5px solid #ccc;
+    text-align: center;
+    margin: 30px 0 0;
+    float: right;
+}
+
+.stepflex dl {
+    float: left;
+    position: relative;
+    width: 160px;
+    top: -5px;
+    border-top: 5px solid #ccc;
+    border-top-color: rgb(204, 204, 204);
+}
+
+.stepflex dl.done .s-num {
+    background-position: -46px 0;
+}
+
+.stepflex .s-num {
+    position: relative;
+    margin: -15px auto 0;
+    color: #fff;
+    font-weight: 700;
+    width: 23px;
+    height: 23px;
+    background-image: url(//misc.360buyimg.com/user/purchase/2.0.0/css/i/step2013.png);
+    line-height: 23px;
+}
+
+.stepflex dl.done {
+    border-top-color: #caecb6;
+}
+
+.stepflex dl.done .s-text {
+    color: #caecb6;
+}
+
+.stepflex dl.doing {
+    border-top-color: #7abd54;
+}
+
+.stepflex dl.doing .s-num {
+    background-position: -23px 0;
+}
+.dingdan{
+    border-bottom: 2px solid #bababa;
+    padding-bottom:10px;
+}
+.shouhuo {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+}
+
+.shouhuo .dd_name {
+    cursor: pointer;
+    border: 1px solid #bababa;
+    display: inline-block;
+    width: 130px;
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 0;
+    margin-left: 15px;
+    margin-right: 50px;
+    float: left;
+    margin-top: -2px;
+}
+.active .dd_name{
+    border: 2px solid #e4393c;
+}
+.shouhuo .dd_name:hover{
+    border: 2px solid #e4393c;
+}
+.shouhuo .dd_name:hover+.dd_con  {
+    color: #e4393c;
+}
+.shouhuo .dd_name:hover+.dd_con .dd_edit{
+     display: inline-block;
+
+ }
+.shouhuo .dd_con {
+    font-size: 14px;
+    margin-left: 170px;
+}
+
+.shouhuo .dd_edit {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.shouhuo .dd_con:hover .dd_edit{
+    display: inline-block;
+}
+.shouhuo .dd_con:hover{
+   color: #e4393c;
+}
+.dingdan .way{
+    cursor: pointer;
+    border: 1px solid #bababa;
+    display: inline-block;
+    width: 100px;
+    font-size: 15px;
+    text-align: center;
+    padding: 3px 0;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.dingdan .dd_active{
+    border: 2px solid #e4393c;
+}
+.dingdan .way:hover{
+    border: 2px solid #e4393c;
+}
+.dingdan .product{
+    display: flex;
+    flex-direction: row;
+}
+.dingdan .product .product_1{
+    display: flex;
+    flex-direction: row;
+}
+.dingdan .product .product_1 .product_1_img,.product_1_img img{
+    width: 180px;
+    height: 180px;
+}
+.dingdan .product .product_1 .product_1_font{
+    display: flex;
+    flex-direction: column;
+}
+.product_2 {
+    margin-top: 60px;
+    color: #e4393c;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sum_1{
+    margin-right: 10px;
+    margin-top: 20px;
+    float: right;
+}
+.sum_2{
+    margin-top: 50px;
+    width: 100%;
+    height: 90px;
+    background-color: #eee;
+}

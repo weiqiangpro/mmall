@@ -1,0 +1,114 @@
+/*
+* @Author: weiqiang
+* @Date: 2019/12/1 14:41
+*/
+.good_cart {
+    padding: 30px 0 30px 0;
+    background-color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.good_cart li {
+    border: 1px solid #bfbfbf;
+    width: 250px;
+    margin-left: 18px;
+    height: 310px;
+    padding: 20px;
+}
+
+.good_cart li a {
+    text-decoration: none;
+}
+
+.good_cart li a:hover p {
+    text-decoration: none;
+    color: red;
+}
+
+.good_cart li a img {
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.good_cart li a p {
+    font-size: 15px;
+    color: black
+}
+
+.good_cart li a p:last-child {
+    color: red;
+    font-size: 13px
+}
+
+.stepflex {
+    display: block;
+    border-top: 5px solid #ccc;
+    text-align: center;
+    margin: 30px 0 0;
+    float: right;
+}
+
+.stepflex dl {
+    float: left;
+    position: relative;
+    width: 160px;
+    top: -5px;
+    border-top: 5px solid #ccc;
+    border-top-color: rgb(204, 204, 204);
+}
+
+.stepflex dl.done .s-num {
+    background-position: -46px 0;
+}
+
+.stepflex .s-num {
+    position: relative;
+    margin: -15px auto 0;
+    color: #fff;
+    font-weight: 700;
+    width: 23px;
+    height: 23px;
+    background-image: url(//misc.360buyimg.com/user/purchase/2.0.0/css/i/step2013.png);
+    line-height: 23px;
+}
+
+.stepflex dl.done {
+    border-top-color: #caecb6;
+}
+
+.stepflex dl.done .s-text {
+    color: #caecb6;
+}
+
+.stepflex dl.doing {
+    border-top-color: #7abd54;
+}
+
+.stepflex dl.doing .s-num {
+    background-position: -23px 0;
+}
+.finish{
+    border-top: 2px solid #7eba55;
+    margin-top: 110px;
+    background-color: #f1fcec;
+    padding-bottom: 50px;
+}
+.finish .finish_1{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.finish .finish_2{
+    font-size: 13px;
+    padding: 5px 8px;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    margin-top: 10px;
+    margin-left: 50px;
+}

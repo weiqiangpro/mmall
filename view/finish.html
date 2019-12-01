@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  @Author: weiqiang
+  @Date: 2019/12/1 14:35
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="//s.happymmall.com/mmall_fe/dist/favicon.ico">
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../page/common/nav/index.js"></script>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../page/common/nav/index.css">
+    <link rel="stylesheet" href="../page/common/header/index.css">
+    <link rel="stylesheet" href="../page/common/footer/index.css">
+    <link rel="stylesheet" href="../page/finish/index.css">
+    <script src="../page/finish/index.js"></script>
+    <link rel="stylesheet" href="../page/finish/iconfont.css">
+</head>
+<body>
+<!--头部-->
+<div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    购物车(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="">我的订单</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user_center.html">用户中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="header">
+    <div class="w">
+        <div style="float:left;margin-top: 20px;margin-right: 60px;"><img src="../image/icon/big.png" alt=""><span
+                style="font-size: 20px;position: relative;top: 10px;">结算页</span></div>
+        <div class="stepflex" id="#sflex03" style="margin-left: 40px;margin-top: 40px;">
+            <dl class="first done">
+                <dt class="s-num">1</dt>
+                <dd class="s-text">1.我的购物车<s></s><b></b></dd>
+            </dl>
+            <dl class="normal done">
+                <dt class="s-num">2</dt>
+                <dd class="s-text">2.填写核对订单信息<s></s><b></b></dd>
+            </dl>
+            <dl class="normal doing">
+                <dt class="s-num">3</dt>
+                <dd class="s-text">3.成功提交订单<s></s><b></b></dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+
+<div class=" w finish">
+    <div class="finish_1">
+        <span class="icon iconfont icon-ziyuanldpi" style="font-size: 40px;color: #7eba55"></span>
+        <span style="font-size: 20px;color: #7eba55">感谢您，订单提交成功</span>
+    </div>
+    <div class="finish_2">查看订单</div>
+    <div class="finish_2">
+        订单号
+        <a href="" style="display: inline-block;margin-left: 20px;margin-right: 50px;">1321319238192</a>
+        共计付款：
+        <span style="color:red;font-size: 14px;font-weight: bold">￥200</span>
+    </div>
+    <br>
+<!--    <div style="margin-left: 40px;margin-top: 20px;">-->
+<!--        <span class="icon iconfont icon-jingshi" style="color:orange;font-size: 20px"></span>-->
+<!--    </div>-->
+</div>
+<!--精品推荐-->
+<div class="w" style="margin-top: 70px;">
+    <p style="text-align: center;font-size: 15px"><span class="icon iconfont icon-gouwuche"  style="font-size: 20px;color: red"></span>
+        购物车帮你选——精品推荐
+    </p>
+    <ul class="good_cart">
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail12.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail13.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+    </ul>
+    <ul class="good_cart">
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail12.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail13.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+        <li>
+            <a href="./list.html?categoryId=100009">
+                <img src="../image/goods/detail11.jpg" alt="空调"/>
+                <p>【良品铺子吃货零食大礼包】坚果肉类组合休闲零食</p>
+                <p>￥10.23</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--尾部-->
+<div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://www.imooc.com" target="_blank">慕课网</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2019 nishuodedoudui.com All Right Reserved
+        </p>
+    </div>
+</div>
+</body>
+</html>

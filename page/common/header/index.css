@@ -63,6 +63,7 @@ body{
     text-decoration: none;
 }
 .btn:hover,.btn:active{
+    background: #c60023;
     color: #fff;
     text-decoration: none;
 }

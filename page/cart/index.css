@@ -201,7 +201,9 @@
     border-top: 1px solid #bfbfbf;
     height: 120px;
 }
-
+.crumb-con a{
+    color: #000;
+}
 .t-goods {
     width: 51%;
     padding-left: 30px;
@@ -237,7 +239,9 @@
 .t-action {
     width: 13%;
 }
-
+.t-action a{
+    color: #000;
+}
 .crumb-con img {
     margin-top: 10px;
     height: 100px;
@@ -267,7 +271,7 @@
     height: 30px;
 }
 
-.t-action div:hover {
+.t-action div:hover a,.t-action div:hover {
     cursor: pointer;
     color: red;
 }
