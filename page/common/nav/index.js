@@ -31,9 +31,11 @@ function alert_(mes) {
 
 function click() {
     $("#user_login").click(function () {
+        // alert_("登陆成功")
         $('#myModal').modal('toggle');
     });
     $("#user_register").click(function () {
+
         $('#myRegister').modal('toggle');
     });
     $(".register_username").blur(function () {
